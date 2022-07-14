@@ -1,0 +1,14 @@
+{
+  "name": "agregando-sass.-boulanger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
