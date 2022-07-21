@@ -74,7 +74,6 @@ ul {
     display: flex;
     justify-content: space-evenly; }
     .footer__rrss a {
-      color: #15140d;
       font-size: 30px;
       transition: color 0.3s; }
       .footer__rrss a:hover {
@@ -91,12 +90,11 @@ ul {
   height: 550px;
   background-color: #dc890e;
   border-radius: 20px; }
-
-.contactoLabels {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 50px; }
+  .contactolabels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px; }
 
 .contactoUno {
   padding: 10px 0px;
@@ -145,3 +143,58 @@ button {
   display: flex;
   flex-direction: row;
   font-size: 18px; }
+
+.btn-base, .btn-asesoramiento, .btn-contacto, .btn-info {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  transition: all 0.3s; }
+  .btn-base:hover, .btn-asesoramiento:hover, .btn-contacto:hover, .btn-info:hover {
+    opacity: 0.8; }
+
+.btn-asesoramiento {
+  color: aliceblue; }
+
+.btn-contacto {
+  color: aliceblue; }
+
+.btn-info {
+  color: aliceblue; }
+
+.card-3 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 20px;
+  max-width: 100%; }
+
+footer {
+  margin-top: 50px; }
+
+.link-twitter {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #55acee; }
+
+.link-instagram {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #c92d8f; }
+
+.link-facebook {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #2279e4; }

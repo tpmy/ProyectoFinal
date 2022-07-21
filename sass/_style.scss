@@ -1,0 +1,70 @@
+.btn-base {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: $fontMedium;
+  font-family: Arial;
+  font-weight: bold;
+  transition: $transicion;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.btn-asesoramiento {
+  @extend .btn-base;
+  color: aliceblue;
+}
+
+.btn-contacto {
+  @extend .btn-base;
+ color: aliceblue
+}
+
+.btn-info {
+  @extend .btn-base;
+  color: aliceblue
+}
+
+@mixin card-base($alineacion, $fondo, $ancho) {
+  margin-top: 30px;
+  display: flex;
+  justify-content: $alineacion;
+  font-weight: bold;
+  font-size: $fontMedium;
+  
+
+  @if ($ancho == 'sm') {
+    max-width: 50%;
+  } @else if ($ancho == 'md') {
+    max-width: 75%;
+  } @else {
+    max-width: 100%;
+  }
+}
+
+.card-3 {
+  @include card-base(space-evenly, rgb(225, 127, 14), '');
+}
+
+footer {
+  margin-top: 50px;
+}
+
+
+$redesSociales: (
+  twitter: #55acee,
+  instagram: #c92d8f,
+  facebook: #2279e4,
+);
+
+@each $nombre, $color in $redesSociales {
+  .link-#{$nombre} {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: $color;
+  }
+}
