@@ -14,7 +14,7 @@ ul {
   padding-left: 0; }
 
 .hero {
-  background-image: linear-gradient(45deg, #dc890e, #b45c10);
+  background-image: linear-gradient(45deg, #dc890e, #b43910);
   padding: 50px 20px;
   color: #07090c; }
   .hero__grid {
@@ -52,16 +52,21 @@ ul {
     transform: translateY(-15px); }
 
 .footer {
-  background-image: linear-gradient(45deg, #dc890e, #b45c10);
+  background-image: linear-gradient(45deg, #dc890e, #b43910);
   color: #0a0d11;
   padding: 50px 20px;
-  margin-top: 100px; }
+  margin-top: 0px; }
+  .footer__home {
+    bottom: 0;
+    margin-top: 30px;
+    text-align: center;
+    color: #3c3b3a; }
   .footer__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px; }
     .footer__grid-list li {
-      margin: 10px 0px; }
+      margin: 10px; }
       .footer__grid-list li .top {
         margin-top: 45px; }
       .footer__grid-list li a {
@@ -72,12 +77,37 @@ ul {
   .footer__rrss {
     margin-top: 30px;
     display: flex;
-    justify-content: space-evenly; }
-    .footer__rrss a {
-      font-size: 30px;
-      transition: color 0.3s; }
-      .footer__rrss a:hover {
-        color: #919090; }
+    justify-content: space-evenly;
+    font-size: 30px; }
+
+.contacto2 {
+  margin-top: 5px;
+  font-size: 30px;
+  color: #222222;
+  transition: color 0.3s; }
+  .contacto2:hover {
+    color: #7c7b79; }
+
+.link-twitter {
+  color: #55acee;
+  text-decoration: none;
+  transition: color 0.3s; }
+  .link-twitter:hover {
+    color: #919090; }
+
+.link-instagram {
+  color: #c92d8f;
+  text-decoration: none;
+  transition: color 0.3s; }
+  .link-instagram:hover {
+    color: #919090; }
+
+.link-facebook {
+  color: #2279e4;
+  text-decoration: none;
+  transition: color 0.3s; }
+  .link-facebook:hover {
+    color: #919090; }
 
 .contact {
   display: flex;
@@ -144,7 +174,7 @@ button {
   flex-direction: row;
   font-size: 18px; }
 
-.btn-base, .btn-asesoramiento, .btn-contacto, .btn-info {
+.btn-base {
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 10px;
@@ -152,17 +182,8 @@ button {
   font-family: Arial;
   font-weight: bold;
   transition: all 0.3s; }
-  .btn-base:hover, .btn-asesoramiento:hover, .btn-contacto:hover, .btn-info:hover {
+  .btn-base:hover {
     opacity: 0.8; }
-
-.btn-asesoramiento {
-  color: aliceblue; }
-
-.btn-contacto {
-  color: aliceblue; }
-
-.btn-info {
-  color: aliceblue; }
 
 .card-3 {
   margin-top: 30px;
@@ -175,26 +196,18 @@ button {
 footer {
   margin-top: 50px; }
 
-.link-twitter {
-  margin: 0 5px;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  background-color: #55acee; }
-
-.link-instagram {
-  margin: 0 5px;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  background-color: #c92d8f; }
-
-.link-facebook {
-  margin: 0 5px;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  background-color: #2279e4; }
+.contenedor {
+  font-size: 30px;
+  text-align: center;
+  margin: 0px;
+  margin-top: 50px;
+  background-color: transparent; }
+  .contenedor__contenido {
+    margin: 0px;
+    padding: 100px;
+    background-image: url(https://www.javierortego.com/wp-content/uploads/2009/10/ladylexproductions-services-financial-services-marketing-banner.jpg);
+    opacity: 90%; }
+    .contenedor__contenido p {
+      text-align: center;
+      margin: 30px;
+      color: black; }

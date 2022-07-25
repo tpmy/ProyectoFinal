@@ -6,24 +6,9 @@
   font-family: Arial;
   font-weight: bold;
   transition: $transicion;
-
   &:hover {
     opacity: 0.8;
   }
-}
-.btn-asesoramiento {
-  @extend .btn-base;
-  color: aliceblue;
-}
-
-.btn-contacto {
-  @extend .btn-base;
- color: aliceblue
-}
-
-.btn-info {
-  @extend .btn-base;
-  color: aliceblue
 }
 
 @mixin card-base($alineacion, $fondo, $ancho) {
@@ -50,21 +35,21 @@
 footer {
   margin-top: 50px;
 }
-
-
-$redesSociales: (
-  twitter: #55acee,
-  instagram: #c92d8f,
-  facebook: #2279e4,
-);
-
-@each $nombre, $color in $redesSociales {
-  .link-#{$nombre} {
-    margin: 0 5px;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
-    background-color: $color;
+.contenedor{
+  font-size: 30px;
+  text-align: center;
+  margin: 0px;
+  margin-top: 50px;
+ background-color: transparent;
+  &__contenido { 
+    margin: 0px;
+    padding: 100px;
+    background-image: url(https://www.javierortego.com/wp-content/uploads/2009/10/ladylexproductions-services-financial-services-marketing-banner.jpg);
+    opacity: 90%;
+    p {
+      text-align: center;
+      margin: 30px;
+      color: rgb(0, 0, 0);
+    }
   }
 }
