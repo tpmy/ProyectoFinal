@@ -47,7 +47,8 @@ ul {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s; }
+  transition: transform 0.3s;
+  margin-bottom: 100px; }
   .card:hover {
     transform: translateY(-15px); }
 
@@ -110,69 +111,52 @@ ul {
     color: #919090; }
 
 .contact {
-  display: flex;
-  justify-content: center; }
+  display: grid;
+  justify-content: center;
+  color: #4f4f4f; }
 
 .contacto {
   display: flex;
-  justify-content: center;
-  width: 900px;
-  height: 550px;
-  background-color: #dc890e;
-  border-radius: 20px; }
-  .contactolabels {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px; }
+  align-items: baseline;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  will-change: opacity,transform;
+  justify-content: center; }
 
 .contactoUno {
-  padding: 10px 0px;
+  padding: 15px;
+  margin: 15px;
   font-weight: bold; }
 
 .contactoDos {
-  padding: 10px 0px;
+  padding: 15px;
+  margin: 15px;
   font-weight: bold; }
 
 .contactoTres {
-  padding: 10px 0px;
+  padding: 15px;
+  margin: 15px;
   font-weight: bold; }
 
 .contactoCuatro {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 0px;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
   font-weight: bold; }
 
 button {
-  width: 80px;
-  height: 40px;
-  margin-bottom: 20px;
-  margin: 10px 0px;
-  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 300px;
+  border: 1px solid #656363;
   border-radius: 5px;
   background-color: white;
-  color: #dc890e;
   font-size: 17px;
-  font-weight: bold; }
-
-.contactoTelefonos {
-  display: flex;
-  flex-direction: column;
-  margin: 50px; }
-
-.contactoP {
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: 25px;
   font-weight: bold;
-  padding: 30px 0px; }
-
-.contactoCinco {
-  display: flex;
-  flex-direction: row;
-  font-size: 18px; }
+  color: gray;
+  margin-bottom: 40px; }
 
 .btn-base {
   text-decoration: none;
@@ -200,14 +184,13 @@ footer {
   font-size: 30px;
   text-align: center;
   margin: 0px;
-  margin-top: 50px;
   background-color: transparent; }
   .contenedor__contenido {
     margin: 0px;
     padding: 100px;
     background-image: url(https://www.javierortego.com/wp-content/uploads/2009/10/ladylexproductions-services-financial-services-marketing-banner.jpg);
-    opacity: 90%; }
-    .contenedor__contenido p {
-      text-align: center;
-      margin: 30px;
+    background-attachment: fixed;
+    background-size: cover; }
+    .contenedor__contenido h2 {
+      font-size: 100px;
       color: black; }

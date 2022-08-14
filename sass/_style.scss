@@ -39,17 +39,17 @@ footer {
   font-size: 30px;
   text-align: center;
   margin: 0px;
-  margin-top: 50px;
  background-color: transparent;
   &__contenido { 
     margin: 0px;
     padding: 100px;
     background-image: url(https://www.javierortego.com/wp-content/uploads/2009/10/ladylexproductions-services-financial-services-marketing-banner.jpg);
-    opacity: 90%;
-    p {
-      text-align: center;
-      margin: 30px;
-      color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    background-size: cover;
+    h2 {
+      font-size: 100px;
+      color: black;
     }
   }
+  
 }
