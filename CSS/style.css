@@ -13,6 +13,17 @@ ul {
   list-style-type: none;
   padding-left: 0; }
 
+@media (max-width: 768px) {
+  * {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .hero__grid-video {
+    display: none; }
+  title {
+    display: none; }
+  script {
+    display: none; } }
+
 .hero {
   background-image: linear-gradient(45deg, #dc890e, #b43910);
   padding: 50px 20px;

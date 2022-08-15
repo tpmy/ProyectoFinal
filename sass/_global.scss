@@ -13,3 +13,18 @@
     list-style-type: none;
     padding-left: 0;
   }
+  @media (max-width: 768px){
+    * {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .hero__grid-video {
+      display: none;
+    }
+    title {
+      display: none;
+    }
+    script {
+      display: none;
+    }
+  }
